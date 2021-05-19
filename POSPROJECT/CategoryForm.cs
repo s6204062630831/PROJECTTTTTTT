@@ -161,6 +161,13 @@ namespace POSPROJECT
             seller.Show();
             this.Hide();
         }
+
+        private void Button_Selling_Click(object sender, EventArgs e)
+        {
+            SellingForm selling = new SellingForm();
+            selling.Show();
+            this.Hide();
+        }
     }
 }
     

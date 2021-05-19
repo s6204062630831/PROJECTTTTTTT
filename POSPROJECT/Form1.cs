@@ -122,7 +122,7 @@ namespace POSPROJECT
 
         private void TextBox_password_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

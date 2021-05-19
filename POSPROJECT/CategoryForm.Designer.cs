@@ -49,9 +49,9 @@ namespace POSPROJECT
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Button_Selling = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label_logout = new System.Windows.Forms.Label();
             this.dataGridView_category = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label_exit = new System.Windows.Forms.Label();
-            this.label_logout = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_category)).BeginInit();
             this.SuspendLayout();
@@ -281,6 +281,7 @@ namespace POSPROJECT
             this.Button_Selling.Size = new System.Drawing.Size(137, 49);
             this.Button_Selling.TabIndex = 19;
             this.Button_Selling.Text = "Selling";
+            this.Button_Selling.Click += new System.EventHandler(this.Button_Selling_Click);
             // 
             // panel1
             // 
@@ -295,6 +296,21 @@ namespace POSPROJECT
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(188, 720);
             this.panel1.TabIndex = 17;
+            // 
+            // label_logout
+            // 
+            this.label_logout.AutoSize = true;
+            this.label_logout.BackColor = System.Drawing.Color.Crimson;
+            this.label_logout.Font = new System.Drawing.Font("Lucida Console", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_logout.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label_logout.Location = new System.Drawing.Point(23, 545);
+            this.label_logout.Name = "label_logout";
+            this.label_logout.Size = new System.Drawing.Size(135, 32);
+            this.label_logout.TabIndex = 33;
+            this.label_logout.Text = "Logout";
+            this.label_logout.Click += new System.EventHandler(this.label_logout_Click);
+            this.label_logout.MouseEnter += new System.EventHandler(this.label_logout_MouseEnter);
+            this.label_logout.MouseLeave += new System.EventHandler(this.label_logout_MouseLeave);
             // 
             // dataGridView_category
             // 
@@ -367,21 +383,6 @@ namespace POSPROJECT
             this.label_exit.Click += new System.EventHandler(this.label_exit_Click);
             this.label_exit.MouseEnter += new System.EventHandler(this.label_exit_MouseEnter);
             this.label_exit.MouseLeave += new System.EventHandler(this.label_exit_MouseLeave);
-            // 
-            // label_logout
-            // 
-            this.label_logout.AutoSize = true;
-            this.label_logout.BackColor = System.Drawing.Color.Crimson;
-            this.label_logout.Font = new System.Drawing.Font("Lucida Console", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_logout.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label_logout.Location = new System.Drawing.Point(23, 545);
-            this.label_logout.Name = "label_logout";
-            this.label_logout.Size = new System.Drawing.Size(135, 32);
-            this.label_logout.TabIndex = 33;
-            this.label_logout.Text = "Logout";
-            this.label_logout.Click += new System.EventHandler(this.label_logout_Click);
-            this.label_logout.MouseEnter += new System.EventHandler(this.label_logout_MouseEnter);
-            this.label_logout.MouseLeave += new System.EventHandler(this.label_logout_MouseLeave);
             // 
             // CategoryForm
             // 
